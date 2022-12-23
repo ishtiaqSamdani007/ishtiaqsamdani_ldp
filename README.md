@@ -1,3 +1,8 @@
+# problem statement
+Data Encryption System: Rahul wants to send encoded messages to his friend Ram. Develop an algorithm to encode all the digits, special characters, lower and upper case alphabets.
+
+
+
 # Huffman Coding
 
 Huffman coding is a lossless data compression algorithm that assigns variable-length codes to data symbols such that the length of the code is inversely proportional to the frequency of the data symbol. This means that symbols that appear more frequently in the data are assigned shorter codes, while symbols that appear less frequently are assigned longer codes.
