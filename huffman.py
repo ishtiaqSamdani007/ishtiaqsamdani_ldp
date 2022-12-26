@@ -107,6 +107,7 @@ def encode(message):
 def decode(root, encoded_message):
     ans = ""
     temp_root = root
+    print(root.symbol, root.left.symbol, root.right.symbol)
     for i in range(0, len(encoded_message)):
         if encoded_message[i] == '0':
             temp_root = temp_root.left
@@ -124,6 +125,7 @@ print("Hi! Rahul")
 print("Enter the message to be encoded :")
 message = input()
 encoded_message = encode(message)
+pr = encoded_message
 print("Encoded Message: ", encoded_message)
 
-print("Decoded Message: ", decode(root, encoded_message))
+print("Decoded Message: ", decode(root, pr))
