@@ -2,6 +2,8 @@ import heapq
 
 encoding_table = {}
 
+root = None
+
 
 class node:
     def __init__(self, freq, symbol, left=None, right=None):
@@ -86,6 +88,8 @@ def encode(message):
 
     # Build the Huffman tree from the frequency table
     huffman_tree = build_huffman_tree(frequency_table)
+    global root
+    root = huffman_tree
 
     # Build the encoding table from the Huffman tree
     build_encoding_table(huffman_tree, "")
@@ -100,8 +104,26 @@ def encode(message):
     return encoded_message
 
 
+def decode(root, encoded_message):
+    ans = ""
+    temp_root = root
+    for i in range(0, len(encoded_message)):
+        if encoded_message[i] == '0':
+            temp_root = temp_root.left
+        else:
+            temp_root = temp_root.right
+
+        if temp_root.left == None and temp_root.right == None:
+            ans += temp_root.symbol
+            temp_root = root
+
+    return ans
+
+
 print("Hi! Rahul")
 print("Enter the message to be encoded :")
 message = input()
 encoded_message = encode(message)
-print("Encoded message: ", encoded_message)
+print("Encoded Message: ", encoded_message)
+
+print("Decoded Message: ", decode(root, encoded_message))
