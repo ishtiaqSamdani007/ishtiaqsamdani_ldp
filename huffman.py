@@ -96,6 +96,12 @@ def encode(message):
 
     # Initialize an empty string to store the encoded message
     encoded_message = ""
+#
+
+# fddsad
+# sadadad
+# sa
+# das
     # Iterate through each character in the message and encode it
     for char in message:
         encoded_message += encoding_table[char]
