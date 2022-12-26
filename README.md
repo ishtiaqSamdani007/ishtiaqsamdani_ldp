@@ -19,6 +19,8 @@ The implementation of Huffman coding in this repository includes the following f
 To use the Huffman coding implementation, simply call the `encode(message)` function with the message you want to encode as input. The encoded message will be returned as output.
 
 `decoding` added
+aded
+ed
 
 # Here is how huffman coding works
 
