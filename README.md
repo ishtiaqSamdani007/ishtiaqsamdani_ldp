@@ -20,6 +20,8 @@ To use the Huffman coding implementation, simply call the `encode(message)` func
 
 `decoding` added
 aded
+adsad
+
 ed
 
 # Here is how huffman coding works
