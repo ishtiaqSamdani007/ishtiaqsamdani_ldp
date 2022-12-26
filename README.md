@@ -1,7 +1,6 @@
 # problem statement
+
 Data Encryption System: Rahul wants to send encoded messages to his friend Ram. Develop an algorithm to encode all the digits, special characters, lower and upper case alphabets.
-
-
 
 # Huffman Coding
 
@@ -19,6 +18,7 @@ The implementation of Huffman coding in this repository includes the following f
 
 To use the Huffman coding implementation, simply call the `encode(message)` function with the message you want to encode as input. The encoded message will be returned as output.
 
+`decoding` added
 
 # Here is how huffman coding works
 
