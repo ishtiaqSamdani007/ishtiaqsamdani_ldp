@@ -87,7 +87,7 @@ footer p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: fixed;
 }
 .landing-page-title {
   position: absolute;
@@ -313,4 +313,39 @@ h1 {
   object-fit: cover;
   margin: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 888888;
+}
+.container {
+  margin-top: 3rem;
+}
+@media screen and (max-width: 640px) {
+  .gallery img {
+    max-width: 45%;
+  }
+  :has(.card) {
+    justify-content: space-around;
+  }
+  .card {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 440px) {
+  .gallery {
+    justify-content: center;
+  }
+  .gallery img {
+    max-width: 100%;
+  }
+  .card {
+    width: 100%;
+  }
+  :has(.card) {
+    justify-content: center;
+  }
 }
