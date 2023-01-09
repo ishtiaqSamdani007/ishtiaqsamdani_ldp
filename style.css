@@ -241,12 +241,7 @@ button[type="submit"]:hover {
   transition: all 150ms ease-in-out;
   margin: 1rem 0;
 }
-.delete-item {
-  background-color: #eb3e3e;
-}
-.delete-item:hover {
-  background-color: rgb(180, 54, 54);
-}
+
 .update-item {
   background-color: #36b436;
 }
@@ -392,7 +387,9 @@ button[type="submit"]:hover {
   display: flex;
   justify-content: flex-end;
 }
-
+.table-card {
+  cursor: pointer;
+}
 @media screen and (max-width: 620px) {
   .container {
     grid-template-columns: 1fr;
