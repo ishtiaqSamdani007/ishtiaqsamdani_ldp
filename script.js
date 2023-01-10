@@ -282,8 +282,14 @@ addGlobalEventListener("click", ".edit", (e) => {
     MenuCardList[key] = newMenuItem;
     // console.log(MenuCardList);
     const menuCardHtml = `
-                            <button class="edit" attr-key="${key}"> uhkjb</button>
-                            <button class="delete"  attr-key="${key}">delete</button>
+    <button class="edit" attr-key=${key}>
+    <img src="./assests/edit.svg" alt="edit-button" class="edit-img edit" attr-key=${key}>
+<span class="show-edit" attr-key=${key}>edit</span>
+    </button>
+    <button class="delete delete-btn" attr-key=${key}>
+    <img src="./assests/delete.svg" alt="edit-button" class="delete-img delete-btn" attr-key=${key}>
+    <span class="show-delete" attr-key=${key}>delete</span>
+    </button>
                             <h2 attr-key="${key}">${newMenuItem.name}</h2>
                             <p attr-key="${key}">Total cost: <span id="total-cost" attr-key="${key}">${newMenuItem.cost}</span></p>
                             <p attr-key="${key}">Item type: <span id="item-type" attr-key="${key}">${newMenuItem.type}</span></p>
