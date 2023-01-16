@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: min(100% - 2rem, 950px);
+  margin: 1rem auto;
+  font-family: Arial, Helvetica, sans-serif;
+}

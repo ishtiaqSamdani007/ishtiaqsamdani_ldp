@@ -1,7 +1,46 @@
-# Problem Statement
+# Getting Started with Create React App
 
-Hyderabad's top most restaurant wants ZeMoSo Labs to design a single page web app for dealing with their billing system, the app should be simple enough for waiters to take order on the go, and should be usable on mobiles too, the app should consist of menu and tables, order beings with start of a new session and when session ended, the app should generate bill for that particular table, the menu should be searchable and sort-able based on items, type of items, a drag-and-drop model might help the waiters dealing the busy hall.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Description
+## Available Scripts
 
-The app is a single page web application for a restaurant's billing system, designed for use on mobile devices. It includes a menu and table management system, and allows waiters to take orders and generate bills for tables. The menu can be searched and sorted by various criteria, and items can be added to tables using a drag-and-drop interface. Waiters can view and modify the orders for each table in a detailed view.
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
