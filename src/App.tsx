@@ -1,12 +1,9 @@
 import "./App.css";
-import TabSlider from "./Components/TabSlider";
+import LoginForm from "./Oraganisms/LoginForm/LoginForm";
 function App() {
   return (
     <>
-      <header>
-        <h1>My Library</h1>
-      </header>
-      <TabSlider />
+      <LoginForm />
     </>
   );
 }

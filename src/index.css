@@ -1,11 +1,18 @@
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  width: min(100% - 2rem, 950px);
-  margin: 1rem auto;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root {
+  width: min(100% - 2rem, 500px);
 }
