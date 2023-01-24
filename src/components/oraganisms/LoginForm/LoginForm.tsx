@@ -1,8 +1,8 @@
 import React from "react";
-import Button from "../../Atoms/Button/Button";
-import TextField from "../../Atoms/TextField/TextField";
-import Typography from "../../Atoms/Typography/Typography";
-import StrokeLine from "../../Molecules/StrokeLine/StrokeLine";
+import Button from "../../atoms/Button/Button";
+import TextField from "../../atoms/TextField/TextField";
+import Typography from "../../atoms/Typography/Typography";
+import StrokeLine from "../../molecules/StrokeLine/StrokeLine";
 import SocialAuth from "../SocialAuth/SocialAuth";
 
 function LoginForm() {

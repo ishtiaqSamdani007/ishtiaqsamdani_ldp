@@ -7,7 +7,7 @@ function CheckBox({ name, label }: Props) {
   return (
     <>
       <label htmlFor={name}>{label}</label>
-      <input type="checkbox" name={name} />
+      <input type="checkbox" data-testid={name} name={name} />
     </>
   );
 }

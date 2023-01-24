@@ -1,6 +1,6 @@
 import React from "react";
-import AuthCard from "../../Molecules/AuthCard/AuthCard";
-import "../../App.css";
+import AuthCard from "../../molecules/AuthCard/AuthCard";
+import "../../../App.css";
 
 function SocialAuth() {
   const authArr: string[] = ["google", "facebook", "Microsoft"];

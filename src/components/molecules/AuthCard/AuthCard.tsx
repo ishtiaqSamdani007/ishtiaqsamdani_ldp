@@ -1,7 +1,7 @@
 import React from "react";
-import Typography from "../../Atoms/Typography/Typography";
-import Icon from "../../Atoms/Icon/Icon";
-import "../../App.css";
+import Typography from "../../atoms/Typography/Typography";
+import Icon from "../../atoms/Icon/Icon";
+import "../../../App.css";
 interface Props {
   src: string;
   authProvider: string;

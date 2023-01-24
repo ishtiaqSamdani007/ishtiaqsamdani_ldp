@@ -54,7 +54,7 @@ Password.args = {
   type: "password",
   placeholder: "Password",
   label: "Password",
-  width: "200px",
+  width: "100%",
   padding: "12px 16px",
   bgColor: "#fff",
   border: "1px solid #D0D5DD",

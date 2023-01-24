@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Typography from "../Typography/Typography";
 import Icon from "../Icon/Icon";
-import eyeOpen from "../../assets/eye-open.svg";
-import eyeClose from "../../assets/eye-close.svg";
-import "../../App.css";
+import eyeOpen from "../../../assets/eye-open.svg";
+import eyeClose from "../../../assets/eye-close.svg";
+import "../../../App.css";
 interface Props {
   placeholder: string;
   type: string;
@@ -79,7 +79,7 @@ function TextField({
         <div className="inp-pass">
           <Icon
             src={watchPassword ? eyeClose : eyeOpen}
-            alt="eye-open"
+            alt={watchPassword ? "eye-close" : "eye-open"}
             width="20px"
             margin="0 0 0 10px"
             onClick={() => setWatchPassword(!watchPassword)}
