@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import styled from "@emotion/styled";
@@ -11,12 +10,9 @@ interface IPost {
   body: string;
 }
 
-
 const StyledCard = styled(Card)({
   maxWidth: 345,
 });
-
-
 
 function CardComponent({ id, title, body }: IPost) {
   return (

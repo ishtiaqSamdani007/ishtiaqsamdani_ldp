@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import axios from "./utils";
 import CardComponent from "./CardComponent";
@@ -34,19 +33,12 @@ function App() {
         <h2 style={{ textAlign: "center" }}>INFO</h2>
       </header>
       <Container fixed>
+        {isError && <h1 style={{ textAlign: "center" }}>{isError}</h1>}
         <Grid container spacing={2} justifyContent="center" alignItems="center">
           {myData.map((item: IPost, index: number) => {
             return (
               <>
-                <Grid
-                  key={index}
-                  item
-                  xs={12}
-                  sm={6}
-                  md={4}
-                  justifyContent="center"
-                  alignItems="center"
-                >
+                <Grid key={item.id} item xs={12} sm={6} md={4}>
                   <CardComponent
                     key={item.id}
                     id={item.id}
