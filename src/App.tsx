@@ -42,6 +42,7 @@ function App() {
                   key={index}
                   item
                   xs={12}
+                  sm={6}
                   md={4}
                   justifyContent="center"
                   alignItems="center"
