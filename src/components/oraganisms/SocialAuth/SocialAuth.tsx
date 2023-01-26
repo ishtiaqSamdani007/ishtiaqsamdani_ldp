@@ -13,7 +13,7 @@ function SocialAuth() {
     <>
       <div className="social-auth">
         {authArr.map((auth, index) => {
-          return <AuthCard key={index} src={src[index]} authProvider={auth} />;
+          return <AuthCard key={auth} src={src[index]} authProvider={auth} />;
         })}
       </div>
     </>

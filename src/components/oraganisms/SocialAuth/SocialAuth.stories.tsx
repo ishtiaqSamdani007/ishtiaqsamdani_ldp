@@ -1,4 +1,3 @@
-import { Meta } from "@storybook/react";
 import SocialAuth from "./SocialAuth";
 
 export default {

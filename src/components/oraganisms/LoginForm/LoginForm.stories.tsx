@@ -1,5 +1,3 @@
-import { Meta } from "@storybook/react";
-
 import LoginForm from "./LoginForm";
 
 export default {
