@@ -1,9 +1,6 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react";
 import TextField from "./TextField";
-import eyeOpen from "../../../assets/eye-open.svg";
-import eyeClose from "../../../assets/eye-close.svg";
-
 describe("TextField component", () => {
   it("should render label and input", () => {
     const placeholder = "Email";
@@ -90,7 +87,7 @@ describe("TextField component", () => {
     const type = "password";
     const name = "input-name";
     const label = "Input label";
-    const { getByLabelText, getByPlaceholderText, getByAltText } = render(
+    const { getByPlaceholderText, getByAltText } = render(
       <TextField
         placeholder={placeholder}
         type={type}
@@ -105,20 +102,15 @@ describe("TextField component", () => {
 
     expect(input).toHaveAttribute("type", "password");
     expect(eyeOpenIcon).toBeInTheDocument();
-    // expect(eyeCloseIcon).not.toBeInTheDocument();
-
     fireEvent.click(eyeOpenIcon);
 
     expect(input).toHaveAttribute("type", "text");
     const eyeCloseIcon = getByAltText("eye-close");
-    // expect(eyeOpenIcon).not.toBeInTheDocument();
     expect(eyeCloseIcon).toBeInTheDocument();
 
     fireEvent.click(eyeCloseIcon);
 
     expect(input).toHaveAttribute("type", "password");
-    // expect(eyeOpenIcon).not.toBeInTheDocument();
-
     expect(eyeCloseIcon).toBeInTheDocument();
   });
 });

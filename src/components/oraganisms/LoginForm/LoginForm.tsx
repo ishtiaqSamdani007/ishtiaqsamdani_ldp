@@ -6,6 +6,9 @@ import StrokeLine from "../../molecules/StrokeLine/StrokeLine";
 import SocialAuth from "../SocialAuth/SocialAuth";
 
 function LoginForm() {
+  const TexFieldChange = () => {
+    console.log("change");
+  };
   return (
     <>
       <Typography
@@ -21,7 +24,7 @@ function LoginForm() {
           type="email"
           placeholder="Email"
           label="Email"
-          onChange={() => {}}
+          onChange={TexFieldChange}
           width="100%"
           padding="12px 16px"
           bgColor="#fff"
@@ -37,7 +40,7 @@ function LoginForm() {
           type="password"
           placeholder="Password"
           label="Password"
-          onChange={() => {}}
+          onChange={TexFieldChange}
           width="100%"
           padding="12px 16px"
           bgColor="#fff"

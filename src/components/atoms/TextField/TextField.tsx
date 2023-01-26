@@ -64,6 +64,9 @@ function TextField({
     backgroundColor: bgColor,
   };
   const [watchPassword, setWatchPassword] = useState(false);
+  const setPass = () => {
+    setWatchPassword(!watchPassword);
+  };
 
   return (
     <>
@@ -82,7 +85,7 @@ function TextField({
             alt={watchPassword ? "eye-close" : "eye-open"}
             width="20px"
             margin="0 0 0 10px"
-            onClick={() => setWatchPassword(!watchPassword)}
+            onClick={setPass}
           />
 
           <input
