@@ -1,9 +1,10 @@
 import React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
+// import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import styled from "@emotion/styled";
+import Typography from "../../atoms/Typography/Index";
 interface IPost {
   id: number;
   title: string;
@@ -20,7 +21,7 @@ function CardComponent({ id, title, body }: IPost) {
       <StyledCard>
         <CardActionArea>
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
+            <Typography gutterBottom variant="h5">
               {title.slice(0, 10)}
             </Typography>
             <Typography variant="body2" color="text.secondary">
