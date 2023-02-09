@@ -1,12 +1,9 @@
 import "./App.css";
-import TabSlider from "./Components/TabSlider";
+import TradeScreen from "./components/organisms/TradeScreen/TradeScreen";
 function App() {
   return (
     <>
-      <header>
-        <h1>My Library</h1>
-      </header>
-      <TabSlider />
+      <TradeScreen />
     </>
   );
 }
