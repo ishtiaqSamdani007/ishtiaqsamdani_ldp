@@ -6,7 +6,7 @@ import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import Typography from "./components/atoms/Typography/Index";
 import Pagination from "@mui/material/Pagination";
-import { Box, Stack } from "@mui/system";
+import { Stack } from "@mui/system";
 
 interface IPost {
   id: number;
