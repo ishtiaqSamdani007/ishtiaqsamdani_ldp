@@ -24,7 +24,9 @@ function DropDown({ arr, dropDownWidth }: Props) {
       label={arr[0]}
     >
       {arr.map((item) => (
-        <MenuItem value={item}>{item}</MenuItem>
+        <MenuItem key={item} value={item}>
+          {item}
+        </MenuItem>
       ))}
     </StyledDropDown>
   );

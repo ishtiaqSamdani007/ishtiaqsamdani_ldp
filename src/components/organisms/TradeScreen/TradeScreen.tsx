@@ -1,7 +1,5 @@
-import React from "react";
 import TabSlider from "../../organisms/TabSlider/TabSlider";
 import Typography from "../../atoms/Typography/Typography";
-import SearchInput from "../../molecules/SearchInput/SearchInput";
 import { Stack } from "@mui/system";
 import Filter from "../Filters/Filter";
 function TradeScreen() {
